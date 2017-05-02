@@ -1,0 +1,1 @@
+include ':app', ':bcprov-ext-jdk15on-156', ':mylibrary', ':bcprov-jdk15on-156'

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pedro.rsaaes.MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnSendKey"
+        android:layout_width="237dp"
+        android:layout_height="46dp"
+        android:text="Enviar Chave Simétrica"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="206dp"
+        android:layout_alignBottom="@+id/cbSend"
+        android:layout_alignLeft="@+id/btnRequestKey"
+        android:layout_alignStart="@+id/btnRequestKey" />
+
+    <Button
+        android:id="@+id/btnRequestKey"
+        android:layout_width="237dp"
+        android:layout_height="46dp"
+        android:text="Solicitar Chave Publica"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="113dp"
+        android:layout_alignBaseline="@+id/cbSolicita"
+        android:layout_alignBottom="@+id/cbSolicita"
+        android:layout_alignRight="@+id/btnSendMsg"
+        android:layout_alignEnd="@+id/btnSendMsg"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <Button
+        android:id="@+id/btnSendMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Enviar Mensagem"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="447dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp" />
+
+    <CheckBox
+        android:id="@+id/cbSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="215dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/btnRequestKey"
+        android:layout_toRightOf="@+id/btnRequestKey"
+        android:layout_toEndOf="@+id/btnRequestKey" />
+
+    <EditText
+        android:id="@+id/edtMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="352dp"
+        android:layout_alignBottom="@+id/btnSendMsg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp" />
+
+    <CheckBox
+        android:id="@+id/cbSolicita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbSend"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/cbSend"
+        android:layout_column="1"
+        android:layout_marginTop="40dp"
+        android:layout_row="0"
+        android:enabled="false"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <TextView
+        android:id="@+id/txtValid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSendKey"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp" />
+
+</RelativeLayout>
